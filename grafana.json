@@ -1,0 +1,41 @@
+{
+  "type": 1,
+  "title": "grafana",
+  "description": "Grafana docker swarm service",
+  "categories": ["monitoring"],
+  "platform": "linux",
+  "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
+  "privileged": true,
+  "env": [
+    {
+      "name": "GF_USERS_ALLOW_SIGN_UP",
+      "default": "false",
+      "preset": true
+    },
+    {
+      "name": "GF_SERVER_PROTOCOL",
+      "default": "https",
+      "preset": true
+    },
+    {
+      "name": "GF_SERVER_CERT_FILE",
+      "default": "/var/lib/grafana/grafana.crt",
+      "preset": true
+    },
+    {
+      "name": "GF_SERVER_CERT_KEY",
+      "default": "/var/lib/grafana/grafana.key",
+      "preset": true
+    }
+  ],
+  "volumes": [
+    {
+      "container": "/var/lib/grafana",
+      "bind": "/swarm/volumes/grafana_data"
+    }
+  ],
+  "ports": [
+      "3000:3000/tcp"
+  ],
+  "image": "grafana/grafana:master"
+}
