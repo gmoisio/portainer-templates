@@ -1,0 +1,4 @@
+run_cmd:
+- "zcat /usr/share/bkeymaps/fr/fr.bmap.gz | loadkmap"
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7LHt5bbQv06yPboR/v7Hmsha6D5tdX02cKbRQ6kgiUR1hq3f1d6ls4i59KEYlaVShZScJVONN2DoixOxs0JKJzIPNXLQ5CXfs4zNmj7PTk8Ab/gQDEI8abDEejPm5h345mSHzsWfRGj2jeEyem7Xff/hOreWWd5/Vk7uUHNdfChv1MHf0ww6of4mWgN7C3fTdf9BvnD7GB3IswwBBRfMF6JWDj1CqOge5csWTP4c/g+v4jP6GUkkgKUXEND5c2W4wtHXLtRlRXbP9/IQHUtNKAx6bKWX5/0lXChrg3IYCE11qc/DZWzUn4TGcNcICj4lJcq/6j2WD4ErcRQ/lBYy1 fr\moisio@FRLAPO309
